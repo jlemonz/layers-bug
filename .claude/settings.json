@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm -v)",
-      "Bash(npm view *)"
+      "Bash(npm view *)",
+      "Bash(SUPABASE_URL=https://example.supabase.co SUPABASE_KEY=dummy_key_for_build bunx nuxt build)",
+      "Bash(NITRO_PRESET=vercel SUPABASE_URL=https://example.supabase.co SUPABASE_KEY=dummy bunx nuxt build)",
+      "Bash(node -e \"import\\('./chunks/virtual/entry.mjs'\\).then\\(\\(\\)=>console.log\\('IMPORT OK'\\)\\).catch\\(e=>console.log\\('FAIL:',e.message\\)\\)\")",
+      "Bash(node -e ' *)"
     ]
   }
 }
