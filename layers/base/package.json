@@ -1,0 +1,9 @@
+{
+  "name": "@layers-bug/base",
+  "private": true,
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "dependencies": {
+    "nuxt": "^4.5.0"
+  }
+}
